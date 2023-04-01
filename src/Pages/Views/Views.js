@@ -16,7 +16,7 @@ function Views() {
 
   const getRoom=async()=>{
     try {
-      const detail=await axios.get(`http://localhost:8000/room/${params.id}`,{
+      const detail=await axios.get(`https://project4-backend-e5g5.onrender.com/room/${params.id}`,{
         headers:{
           Authorization:`${window.localStorage.getItem("token")}`
         }

@@ -18,7 +18,7 @@ function Room() {
 
   const getRooms=async()=>{
     try {
-      const room=await axios.get(`http://localhost:8000/city?cities=${city}`,{
+      const room=await axios.get(`https://project4-backend-e5g5.onrender.com/city?cities=${city}`,{
         headers:{
           Authorization:`${window.localStorage.getItem("token")}`
         }
@@ -42,7 +42,7 @@ function Room() {
         }
       })
 
-      await axios.put(`http://localhost:8000/room/${item._id}`,{unAvailableDates:[fromDate,toDate]},{
+      await axios.put(`https://project4-backend-e5g5.onrender.com/room/${item._id}`,{unAvailableDates:[fromDate,toDate]},{
         headers:{
           Authorization:`${window.localStorage.getItem("token")}`
         }

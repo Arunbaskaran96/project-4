@@ -25,7 +25,7 @@ function Login() {
         onSubmit:async(value)=>{
             try {
                 setDisable(true)
-                const user=await axios.post("http://localhost:8000/login",value)
+                const user=await axios.post("https://project4-backend-e5g5.onrender.com/login",value)
                 window.localStorage.setItem("token",user.data.token)
                 if(user.data.user.role==="user"){
                     nav("/home")

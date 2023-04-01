@@ -21,7 +21,7 @@ function EditRoom() {
         onSubmit:async(value)=>{
             try {
                 setIsDisable(true)
-                await axios.put(`http://localhost:8000/room/${params.id}`,value,{
+                await axios.put(`https://project4-backend-e5g5.onrender.com/room/${params.id}`,value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }
@@ -40,7 +40,7 @@ function EditRoom() {
 
     const getRoom=async()=>{
         try {
-            const result=await axios.get(`http://localhost:8000/room/${params.id}`,{
+            const result=await axios.get(`https://project4-backend-e5g5.onrender.com/room/${params.id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

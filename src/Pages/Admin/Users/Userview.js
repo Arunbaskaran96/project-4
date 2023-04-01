@@ -13,7 +13,7 @@ function Userview() {
 
     const getUser=async()=>{
         try {
-            const result=await axios.get(`http://localhost:8000/user/${params.id}`,{
+            const result=await axios.get(`https://project4-backend-e5g5.onrender.com/user/${params.id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

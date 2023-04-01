@@ -11,7 +11,7 @@ function History() {
 
     const getData=async()=>{
         try {
-            const result=await axios.get("http://localhost:8000/booking",{
+            const result=await axios.get("https://project4-backend-e5g5.onrender.com/booking",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

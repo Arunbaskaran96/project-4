@@ -12,7 +12,7 @@ function Users() {
 
     const getUser=async()=>{
         try {
-            const result=await axios.get("http://localhost:8000/users",{
+            const result=await axios.get("https://project4-backend-e5g5.onrender.com/users",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

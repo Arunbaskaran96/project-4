@@ -12,7 +12,7 @@ function AdminRoom() {
 
     const getRooms=async()=>{
         try {
-            const result=await axios.get("http://localhost:8000/rooms",{
+            const result=await axios.get("https://project4-backend-e5g5.onrender.com/rooms",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -26,7 +26,7 @@ function AdminRoom() {
     const remove=async(item)=>{
         try {
             setDisable(true)
-            await axios.delete(`http://localhost:8000/room/${item._id}`,{
+            await axios.delete(`https://project4-backend-e5g5.onrender.com/room/${item._id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

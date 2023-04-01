@@ -44,7 +44,7 @@ function Register() {
         onSubmit:async(value)=>{
             try {
                 setDisable(true)
-                await axios.post("http://localhost:8000/user",value)
+                await axios.post("https://project4-backend-e5g5.onrender.com/user",value)
                 alert("Successfully created")
                 nav("/")
             } catch (error) {

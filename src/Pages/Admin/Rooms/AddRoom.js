@@ -19,7 +19,7 @@ function AddRoom() {
         validate:()=>{},
         onSubmit:async(value)=>{
             try {
-                await axios.post("http://localhost:8000/room",value,{
+                await axios.post("https://project4-backend-e5g5.onrender.com/room",value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }

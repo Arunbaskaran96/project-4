@@ -16,7 +16,7 @@ function User() {
         validate:()=>{},
         onSubmit:async(value)=>{
             try{
-                await axios.put(`http://localhost:8000/user`,value,{
+                await axios.put(`https://project4-backend-e5g5.onrender.com/user`,value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }
@@ -37,7 +37,7 @@ function User() {
 
     const getUser=async()=>{
         try {
-            const profile=await axios.get("http://localhost:8000/user",{
+            const profile=await axios.get("https://project4-backend-e5g5.onrender.com/user",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

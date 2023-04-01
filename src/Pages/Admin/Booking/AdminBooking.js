@@ -11,7 +11,7 @@ function AdminBooking() {
 
     const getBookings=async()=>{
         try {
-            const result=await axios.get("http://localhost:8000/bookings",{
+            const result=await axios.get("https://project4-backend-e5g5.onrender.com/bookings",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
