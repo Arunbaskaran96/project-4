@@ -1,9 +1,12 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './History.css'
+import { Link } from 'react-router-dom'
 
 function History() {
     const [book,setBook]=useState([])
+    const[hotel,setHotel]=useState([])
+    const [isLoad,setIsLoad]=useState(true)
 
     useEffect(()=>{
         getData()
@@ -18,40 +21,44 @@ function History() {
             })
             console.log(result.data)
             setBook(result.data)
+            setHotel(result.data)
+            setIsLoad(false)
         } catch (error) {
             console.log(error)
         }
     }
   return (
     <div className='history-container'>
-        <table class="table">
-            <thead className=' table-dark'>
-                <tr>
-                    <th scope="col">Hotel Name</th>
-                    <th scope="col">Location</th>
-                    <th scope="col">From Date</th>
-                    <th scope="col">To Date</th>
-                    <th scope="col">Cost</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    book.length>0?(
-                        book.map((item)=>{
+        {
+            isLoad ? (
+                <div></div>
+            ):(
+                <table class="table">
+                <thead className=' table-dark'>
+                    <tr>
+                        <th scope="col">From Date</th>
+                        <th scope="col">To Date</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        hotel.map((item)=>{
                             return(
                                 <tr>
-                                <td>{item.roomId.name}</td>
-                                <td>{item.roomId.location}</td>
-                                <td>{item.from}</td>
-                                <td>{item.to}</td>
-                                <td>{item.roomId.price}</td>
-                              </tr>
+                                    <td>{item.from}</td>
+                                    <td>{item.to}</td>
+                                    <td>
+                                        <Link to={`/topbar/moredetails/${item._id}`} className='btn btn-primary'>More Details</Link>
+                                    </td>
+                                </tr>
                             )
                         })
-                    ):(<div style={{marginTop:"80px"}}>No Bookings found</div>)
-                }
-            </tbody>
-</table>
+                    }
+                </tbody>
+            </table>
+            )
+        }
     </div>
   )
 }

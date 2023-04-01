@@ -64,3 +64,16 @@
     height: 500px;
     object-fit: cover;
 }
+
+.home-contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts{
+    font-size: 60px;
+}
+.contacts-list{
+    list-style: none;
+}

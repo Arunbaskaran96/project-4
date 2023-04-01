@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function AdminBooking() {
     const[bookings,setBookings]=useState([])
@@ -33,11 +34,9 @@ function AdminBooking() {
                         <thead className='table-dark'>
                             <tr>
                                 <th scope="col">Booked By</th>
-                                <th scope="col">Hotel Name</th>
-                                <th scope="col">Location</th>
                                 <th scope="col">From Date</th>
                                 <th scope="col">To Date</th>
-                                <th scope="col">Amount</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,9 +45,11 @@ function AdminBooking() {
                                     return(
                                         <tr>
                                             <td>{item.userId.name}</td>
-                                            {/* <td>{item.roomId.price}</td> */}
                                             <td>{item.from}</td>
                                             <td>{item.to}</td>
+                                            <td>
+                                                <Link to={`/admintop/moredetails/${item._id}`} className='btn btn-primary'>More Details</Link>
+                                            </td>
                                         </tr>
                                     )
                                 })

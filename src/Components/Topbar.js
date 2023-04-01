@@ -26,7 +26,7 @@ function Topbar() {
             <Link to="/topbar/history" className='history'>
                 <li className='top-list'>History</li>
             </Link>
-            <button className='logout' onClick={remove}>
+            <button className='logout btn btn-secondary' style={{marginTop:"10px"}} onClick={remove}>
                 <li className='top-list'>Log out</li>
             </button>
         </ul>

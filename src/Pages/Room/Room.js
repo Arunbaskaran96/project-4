@@ -6,11 +6,16 @@ import './Room.css'
 function Room() {
   const[rooms,setRooms]=useState([])
   const location=useLocation()
-  const [city,setCity]=useState(location.state.city)
-  const [fromDate,setFromDate]=useState(location.state.fromDate)
-  const [toDate,setToDate]=useState(location.state.toDate)
+  // const [city,setCity]=useState(location.state.city)
+  // const [fromDate,setFromDate]=useState(location.state.fromDate)
+  // const [toDate,setToDate]=useState(location.state.toDate)
 
-  console.log(rooms)
+  const [city,setCity]=useState(location.state.value.city)
+  const [fromDate,setFromDate]=useState(location.state.value.fromDate)
+  const [toDate,setToDate]=useState(location.state.value.toDate)
+
+
+  // console.log(rooms)
 
   useEffect(()=>{
     getRooms()
@@ -36,7 +41,7 @@ function Room() {
   const booking=async(item)=>{
     try {
       alert("Do you want to book this room?")
-      await axios.post(`http://localhost:8000/booking/${item._id}`,{from:fromDate,to:toDate},{
+      await axios.post(`https://project4-backend-e5g5.onrender.com/booking/${item._id}`,{from:fromDate,to:toDate},{
         headers:{
           Authorization:`${window.localStorage.getItem("token")}`
         }

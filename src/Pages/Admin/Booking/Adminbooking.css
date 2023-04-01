@@ -1,0 +1,16 @@
+.adminbookin-label{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+.adminbookin-res{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.admin-booikg-details{
+    box-shadow: 10px 10px 10px black;
+    padding: 10px 0px; 
+    background-color: whitesmoke;
+}

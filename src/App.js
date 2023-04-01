@@ -17,6 +17,7 @@ import Room from './Pages/Room/Room';
 import User from './Pages/User/User';
 import Views from './Pages/Views/Views';
 import EditRoom from './Pages/Admin/Rooms/EditRoom';
+import MoreDetails from './Pages/Admin/Booking/MoreDetails';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='userprofile' element={<User/>}></Route>
         <Route path='payment/:id' element={<Payment/>}></Route>
         <Route path="history" element={<History/>}></Route>
+        <Route path='moredetails/:id' element={<MoreDetails/>}></Route>
       </Route>
       <Route path='/admintop' element={<Adminportal/>}>
         <Route path='users' element={<Users/>}></Route>
@@ -42,6 +44,7 @@ function App() {
         <Route path='addroom' element={<AddRoom/>}></Route>
         <Route path='bookings' element={<AdminBooking/>}></Route>
         <Route path='editroom/:id' element={<EditRoom/>}></Route>
+        <Route path='moredetails/:id' element={<MoreDetails/>}></Route>
       </Route>
     </Routes>
     </BrowserRouter>
