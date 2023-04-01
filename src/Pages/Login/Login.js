@@ -40,6 +40,9 @@ function Login() {
     })
   return (
     <div className='login-main-container'>
+        <div className='login-image-card'>
+            <img className='login-card-image' src='https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='login-img'/>
+        </div>
         <div className='login-mini-container'>
             <form onSubmit={formik.handleSubmit}>
                 <div>
@@ -54,7 +57,7 @@ function Login() {
                 </div>
             </form>
             <div>
-                <button  className='login-int btn btn-secondary' >Forgot Password</button><br/>
+                <Link to="/forgot-password"  className='login-int btn btn-secondary' >Forgot Password</Link><br/>
                 <Link to='/register' className='login-int btn btn-primary' >Sign up</Link><br/>
             </div>
         </div>

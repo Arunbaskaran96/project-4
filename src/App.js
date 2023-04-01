@@ -18,6 +18,7 @@ import User from './Pages/User/User';
 import Views from './Pages/Views/Views';
 import EditRoom from './Pages/Admin/Rooms/EditRoom';
 import MoreDetails from './Pages/Admin/Booking/MoreDetails';
+import ForgotPassword from './Pages/ForgotPassword/ForgotPassword';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     
       <Route path='/' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
+      <Route path='/forgot-password' element={<ForgotPassword/>}/>
       <Route path='/home' element={<About/>}/>
       <Route path='/topbar' element={<Portal/>}>
         <Route path='room' element={<Room/>}></Route>
