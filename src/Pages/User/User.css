@@ -1,0 +1,10 @@
+.user-label{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.user-int{
+    width: 250px;
+    height: 30px;
+}

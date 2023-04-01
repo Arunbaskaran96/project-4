@@ -1,0 +1,22 @@
+.reg-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.reg-label{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+.reg-int{
+    width: 300px;
+    height: 33px;
+}
+
+.reg-card{
+    margin-top: 90px;
+    box-shadow: 10px 10px 10px black;
+    padding: 10px 0px;
+    background-color: whitesmoke;
+}

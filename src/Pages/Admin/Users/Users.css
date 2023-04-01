@@ -1,0 +1,22 @@
+.user-container{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.heading{
+    font-size: 21px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    margin-bottom: 13px;
+}
+.user-res{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+.userview-container{
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black;
+}

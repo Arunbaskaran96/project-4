@@ -1,0 +1,54 @@
+.admin-topbar{
+    background-color: black;
+    height: 9vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top:0px
+}
+.admintop-img{
+    height: 60px;
+}
+
+.admin-pages-list{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.pages{
+    color: white;
+    list-style: none;
+}
+.companyname{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 7px;
+}
+
+
+@media screen and (max-width:768px) {
+    .admin-pages-list{
+        display: none;
+    }
+    .nav-link-mobile{
+        display: block;
+        position: absolute;
+        right: 0px;
+        top:60px;
+        background-color: black;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .pages{
+        margin: 15px 0px;
+    }
+    .companyname{
+        display: none;
+    }
+}

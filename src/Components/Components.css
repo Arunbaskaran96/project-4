@@ -1,0 +1,90 @@
+.topbar-img{
+    height: 60px;
+    width: 100%;
+}
+.topbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.808);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 9999;
+}
+.top-list{
+    list-style: none;
+}
+.topbar-lists{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.company-name{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+/* .menu-bars{
+    font-size: 100px;
+} */
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.user,.history,.logout{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .topbar-lists{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: gold;
+        outline: none;
+        top: 1px;
+        right: 10px;
+    }
+    .mobile-menu-icon{
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 5px;
+    }
+    .company-name{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: black;
+        width: 100%;
+        right: 0;
+        top: 53.4px;
+        transition: all 0.5s ease-out;
+    }
+    .user,.history,.logout{
+        color: wheat;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,66 @@
+.company-img{
+    height: 70px;
+}
+.first-container{
+    border: 1px solid black;
+    background-color: black;
+}
+.abt-btn{
+    margin-top: 16px;
+}
+.abt-member,.abt-com,.abt-user{
+    border-right: 1px solid black;
+    padding-top: 8px;
+    color: whitesmoke;
+}
+.abt-user{
+    padding-top: 10px;
+}
+.users-container{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.user-pic{
+    font-size: 40px;
+    color: whitesmoke;
+}
+.second-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 5px;
+}
+.loc{
+    font-size: 20px;
+}
+.our-loc{
+    letter-spacing: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+.third-container{
+    background-color: rgba(255, 0, 0, 0.815);
+    height: 30vh;
+}
+
+.int-room{
+    height: 50px;
+    width: 240px;
+}
+.btn-room{
+    padding: 10px;
+    margin-left: 10px;
+}
+.last-container{
+    background-color: gray;
+    height: 30vh;
+    margin-top: 40px;
+}
+
+.imgg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
