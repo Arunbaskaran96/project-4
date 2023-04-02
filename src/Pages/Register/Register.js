@@ -56,7 +56,7 @@ function Register() {
   return (
     <div className='container'>
         <div className='row reg-card'>
-            <div className='col-mnd-4' style={{backgroundColor:"white"}}>
+            <div className='col-md-4' style={{backgroundColor:"white"}}>
                 <img className='reg-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDkaPQB6rNKkn-M3vS-3eueVvnX-yO96eWA&usqp=CAU' alt='register-img'/>
             </div>
             <div className='col-md-8'>
